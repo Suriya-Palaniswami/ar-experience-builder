@@ -23,31 +23,39 @@ public class anim : MonoBehaviour
     public List<AnimList> animList;
     public int MasterExecutionLevel;
     public int _internalExecutionLevel;
+
+    public string prior;
+    private ExperienceBuilder _experienceBuilder;
     // Start is called before the first frame update
     void Start()
     {
         animator.enabled = false;
-        
+        _experienceBuilder = FindObjectOfType<ExperienceBuilder>();
+        GetPrior();
     }
 
     private void OnEnable()
     {
-        EventManager.OnGameAction += ManageEvents;   
+        //EventManager.OnGameAction += ManageEvents;   
     }
 
     
 
     private void OnDisable()
     {
-        EventManager.OnGameAction -= ManageEvents;
+        //EventManager.OnGameAction -= ManageEvents;
 
     }
 
     private void ManageEvents(int _executionLevel, object _o)
     {
-        if (_executionLevel == MasterExecutionLevel)
+        if (prior != "")
         {
-            StartCoroutine("GetAnimationAndPlayAnimator");
+            GetAnimationAndPlayAnimator();
+        }
+        else
+        {
+            Debug.Log("Done Playing Okay To Move On To Next Step");
         }
     }
 
@@ -66,11 +74,22 @@ public class anim : MonoBehaviour
             }
                 else if (animList.Count <= _internalExecutionLevel)
                 {
-                    EventManager.DoGameAction(MasterExecutionLevel++, null);
+                    //EventManager.DoGameAction(MasterExecutionLevel++, null);
                 }
             }
     }
-        
+
+    private void GetPrior()
+    {
+        try
+        {
+            prior = _experienceBuilder.ObjectsInExperience[_experienceBuilder.ObjectsInExperience.FindIndex(x => x.gameObject.name == this.gameObject.name) - 1].name;
+        }
+        catch (Exception e)
+        {
+            prior = "";
+        }
+    }
         
     }
 
