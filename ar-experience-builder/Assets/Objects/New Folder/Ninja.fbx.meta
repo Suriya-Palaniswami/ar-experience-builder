@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8a8b1a381c5778342b6da9a4f2e62989
+guid: 702ef9ba255645641ae9123c622f8244
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -33,9 +33,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Normal Jump
-      takeName: Peasant Girl - Normal Jump|Normal Jump
-      internalID: 4496991891739078918
+      name: Ninja|Armature.001|mixamo.com|Layer0
+      takeName: Ninja|Armature.001|mixamo.com|Layer0
+      internalID: -1623701962443937539
       firstFrame: 0
       lastFrame: 56
       wrapMode: 0
@@ -62,9 +62,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Peasant Girl - Normal Jump|Armature|mixamo.com|Layer0
-      takeName: Peasant Girl - Normal Jump|Armature|mixamo.com|Layer0
-      internalID: 4577091016777913648
+      name: Ninja|Armature|mixamo.com|Layer0
+      takeName: Ninja|Armature|mixamo.com|Layer0
+      internalID: 8579832698246856551
       firstFrame: 0
       lastFrame: 51
       wrapMode: 0
@@ -91,9 +91,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Peasant Girl - Normal Jump|Normal Jump
-      takeName: Peasant Girl - Normal Jump|Normal Jump
-      internalID: -5661895673235692754
+      name: Ninja|Normal Jump
+      takeName: Ninja|Normal Jump
+      internalID: -1958163559310081946
       firstFrame: 0
       lastFrame: 56
       wrapMode: 0
@@ -120,11 +120,69 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Round Jump
-      takeName: Peasant Girl - Normal Jump|Peasant girl - Round Jump
-      internalID: -5188792899677609275
+      name: Ninja|Peasant girl - Round Jump
+      takeName: Ninja|Peasant girl - Round Jump
+      internalID: -8756750855327200380
       firstFrame: 0
       lastFrame: 51
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Other Dancing
+      takeName: Ninja|Silly Dancing
+      internalID: -8265635103839162122
+      firstFrame: 0
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Silly Dancing
+      takeName: Ninja|Silly Dancing
+      internalID: -8489497683224588758
+      firstFrame: 0
+      lastFrame: 115
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

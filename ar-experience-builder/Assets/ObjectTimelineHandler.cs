@@ -111,10 +111,19 @@ public class ObjectTimelineHandler : MonoBehaviour
     IEnumerator PlayAudio()
     {
         AudioSource.enabled = true;
+        //Debug.Log(_currentAnimationClip.name.ToString());
+        
+        if (!_experienceBuilder.isNonLinear)
+        {
+            AnimatorClipInfo[] m_CurrentClipInfo;
+            m_CurrentClipInfo = _animator.GetCurrentAnimatorClipInfo(0);
+            _currentAnimationClip = m_CurrentClipInfo[0].clip;
+            
+        }
         var clip = Resources.Load<AudioClip>("Audios/" + _currentAnimationClip.name.ToString());
         if (clip == null)
         {
-            Debug.Log(GetType().Name + ": " + gameObject.name.ToString() + " has no audio.");
+            Debug.Log(GetType().Name + ": " + gameObject.name.ToString() + " has no audio."+ _currentAnimationClip.name.ToString());
         }
         var audioClip = Instantiate(clip);
         AudioSource.clip = audioClip;
